@@ -5,13 +5,20 @@
   "main": "./src/index.ts",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "test": "jest --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/jest": "^27.5.1",
+    "babel-jest": "^28.1.0",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.0",
     "mini-css-extract-plugin": "^2.6.0",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.3.0",
